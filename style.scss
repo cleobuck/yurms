@@ -1,0 +1,62 @@
+body {
+    background: #F6E9D2;
+    color:#0E1705;
+    height: 2000px;
+    
+    nav {
+        background-color: rgba(133,192,65,0.9);
+        box-shadow: 1px 4px 15px -1px rgba(0,0,0,0.75);
+        .logo {
+            width: 250px;
+            img {
+                width: 100%;
+              }
+          }
+        }
+    
+    main {
+        padding-top: 120px;
+    
+    .jumbotron  {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 60vh;
+        background: url("https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Ftimedotcom.files.wordpress.com%2F2015%2F04%2Fdavid-george-gordon-deep-fried-tarantula-spider-image-p-118.jpeg%3Fquality%3D85&w=800&c=sc&poi=face&q=85")  center center/cover no-repeat;
+        .btn {
+            background-color: #B23130;
+            border: none;
+        }
+       .container   {
+           background-color:red;
+       }
+    }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+  
+  
+  
+
+  
