@@ -1,13 +1,9 @@
 body {
-  background: #F6E9D2;
   color: #0E1705;
-  height: 2000px;
 }
 
 body nav {
-  background-color: rgba(133, 192, 65, 0.9);
-  -webkit-box-shadow: 1px 4px 15px -1px rgba(0, 0, 0, 0.75);
-          box-shadow: 1px 4px 15px -1px rgba(0, 0, 0, 0.75);
+  background: transparent;
 }
 
 body nav .logo {
@@ -18,8 +14,13 @@ body nav .logo img {
   width: 100%;
 }
 
-body main {
-  padding-top: 120px;
+body nav .navbar-item .nav-link {
+  color: #0E1705;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 27px -15px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 27px -15px rgba(0, 0, 0, 0.75);
 }
 
 body main .jumbotron {

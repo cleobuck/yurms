@@ -1,21 +1,34 @@
+$primary_color:  #F6E9D2;
+$text_color: #0E1705; 
+$secondary_color: rgb(133,192,65);
+
+
 body {
-    background: #F6E9D2;
-    color:#0E1705;
-    height: 2000px;
+    color: $text_color;
     
     nav {
-        background-color: rgba(133,192,65,0.9);
-        box-shadow: 1px 4px 15px -1px rgba(0,0,0,0.75);
+        
+        background: transparent;
+        
         .logo {
             width: 250px;
             img {
                 width: 100%;
               }
           }
+        .navbar-item {
+        .nav-link {
+            color: $text_color;
+            background: rgba(255,255,2555,0.5);
+            margin: 0 5px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 27px -15px rgba(0,0,0,0.75);
+            }
         }
+       
+    }
     
     main {
-        padding-top: 120px;
     
     .jumbotron  {
         
@@ -35,6 +48,7 @@ body {
     }
     }
 }
+
 
 
 
