@@ -3,11 +3,8 @@ body {
 }
 
 body nav {
+  top: 0;
   background: transparent;
-}
-
-body nav .logo {
-  width: 250px;
 }
 
 body nav .logo img {
@@ -24,6 +21,7 @@ body nav .navbar-item .nav-link {
 }
 
 body main .jumbotron {
+  padding-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
