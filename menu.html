@@ -13,12 +13,12 @@
   <body>
 
 <header>
-    <div class="row">
-    <nav class="col-12 navbar navbar-light  bg-transparent navbar-expand-md position-absolute">
+    <div class="row pt-3 pr-3">
+    <nav class="col-12 navbar navbar-light  bg-transparent navbar-expand-md">
 
-      <div class="logo w-25 pl-3">
+      <a href="index.html" class="logo w-25 pl-3">
             <img alt="Yurm's logo"  src="img/'Yurms.png">
-      </div>
+      </a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             
@@ -32,7 +32,7 @@
             <ul class="navbar-nav ml-auto mr-3">
                 <li class="navbar-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="navbar-item active"><a href="menu.html" class="nav-link">Menu</a></li>
-                <li class="navbar-item"><a href="Gallery.html" class="nav-link">Gallery</a></li>
+                <li class="navbar-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li class="navbar-item"><a href="restaurant.html" class="nav-link">Restaurants</a></li>
                 <li class="navbar-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
@@ -47,10 +47,40 @@
   <div class="transparentbg1">
  
     </div>
+
+
+    <div id="MainMenu">
+      <div class="list-group panel">
+        <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
+        <div class="collapse" id="demo3">
+          <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
+          <div class="collapse list-group-submenu" id="SubMenu1">
+            <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
+            <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
+            <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
+            <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+              <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
+              <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+            </div>
+            <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
+          </div>
+          <a href="javascript:;" class="list-group-item">Subitem 2</a>
+          <a href="javascript:;" class="list-group-item">Subitem 3</a>
+        </div>
+        <a href="#demo4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 4</a>
+        <div class="collapse" id="demo4">
+          <a href="" class="list-group-item">Subitem 1</a>
+          <a href="" class="list-group-item">Subitem 2</a>
+          <a href="" class="list-group-item">Subitem 3</a>
+        </div>
+      </div>
+    </div>
   
     
 </main>
 
+
+<span class="badge badge-primary">Primary</span>
 
 <footer>
        

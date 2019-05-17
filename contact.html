@@ -8,17 +8,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </head>
   <body>
 
 <header>
-    <div class="row">
-    <nav class="col-12 navbar navbar-light  bg-transparent navbar-expand-md position-absolute">
+    <div class="row pt-3 pr-3">
+    <nav class="col-12 navbar navbar-light  bg-transparent navbar-expand-md">
 
-      <div class="logo w-25 pl-3">
+      <a href="index.html" class="logo w-25 pl-3">
             <img alt="Yurm's logo"  src="img/'Yurms.png">
-      </div>
+      </a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             
@@ -32,9 +32,9 @@
             <ul class="navbar-nav ml-auto mr-3">
                 <li class="navbar-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="navbar-item"><a href="menu.html" class="nav-link">Menu</a></li>
-                <li class="navbar-item"><a href="Gallery.html" class="nav-link">Gallery</a></li>
+                <li class="navbar-item active"><a href="gallery.html" class="nav-link">Gallery</a></li>
                 <li class="navbar-item"><a href="restaurant.html" class="nav-link">Restaurants</a></li>
-                <li class="navbar-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="navbar-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -44,10 +44,73 @@
 
 <main>
 
-  <div class="transparentbg1">
- 
-    </div>
+  <div class="transparentbg1"></div>
+
+    <div class="container contact">
+            
+      <form>
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="nom">Nom</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="nom">
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="prenom">Prénom</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="prenom">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="email">Email</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="prenom">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="sujet">Pourquoi nous contactez-vous?</label>
+
+                <div class="col-sm-9">
+                  <select class="form-control" id="sujet">
+                    <option>Une réservation</option>
+                    <option>Je suis de la presse</option>
+                    <option>Une question sur vos produits</option>
+                    <option>Un partenariat</option>
+                    <option>Une autre curiosité</option>
+                  </select>
+                </div>
+             </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label" for="message">Votre message:</label>
+
+                    <div class="col-sm-9">
+                    <textarea class="form-control" id="message" rows="5"></textarea>
+                    </div>
+
+                </div>
+
+
+
+             
+
+
+            
+            <div class="row">
+                <div class="col-sm-9 offset-sm-3">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <i class="fas fa-envelope-open-text"></i></button>
+              
+                </div>
+            </div>
   
+          </form>
+        </div>
+        
+      
     
 </main>
 
