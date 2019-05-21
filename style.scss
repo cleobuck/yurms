@@ -3,28 +3,51 @@
 $primary_color:  #F6E9D2;
 $text_color: #0E1705; 
 $secondary_color: rgb(133,192,65);
+$bordeau:  #B23130;
 
 /* animations */
 
 @keyframes reduce  {
-    from {height:100vh}
-    to {height: 10vw}
+    from {height: 1000px; opacity:0.7}
+    to {height: 100%; opacity:0 }
 }
 
-@keyframes appear {
-    from {margin-top: 2000px}
-    to {margin-top: 0}
-}
+
 
 /* main styling and for index.html */ 
-header  {
-    overflow: hidden;
-}
-body {
+.transparentbg1 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: 2s reduce forwards;
+   
     
+    &:before {
+        content:'';
+        background: url('https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Ftimedotcom.files.wordpress.com%2F2015%2F04%2Fdavid-george-gordon-deep-fried-tarantula-spider-image-p-118.jpeg%3Fquality%3D85&w=800&c=sc&poi=face&q=85')  center center/cover no-repeat;
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width:100%;
+        height: 100%;
+        z-index:-1;
+        opacity: 0.7; 
+    }
+}
+
+
+
+
+
+body {
+
     background: #f2f2f2;
     height: 100%;
     color: $text_color;
+    
+
     nav {
         top: 0;
         background: transparent;
@@ -74,20 +97,7 @@ body {
             opacity: 0.7; 
         }
     }
-    .transparentbg1 {
-        &:before {
-        content:'';
-            background: url('https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Ftimedotcom.files.wordpress.com%2F2015%2F04%2Fdavid-george-gordon-deep-fried-tarantula-spider-image-p-118.jpeg%3Fquality%3D85&w=800&c=sc&poi=face&q=85')  center center/cover no-repeat;
-            position: absolute;
-            top:0px;
-            left: 0px;
-            width:100%;
-            height: 10vw;
-            z-index:-1;
-            opacity: 0.7; 
-            animation: 2s reduce forwards;
-            min-height: 100px;
-        }
+  
     }
     
     .jumbotron  {
@@ -104,13 +114,17 @@ body {
        }
     }
     }
-}
+
+
+/* index cards */
+
+
 
 /* gallery */
 
 .tab-content {
     height: 600px;
-    margin-top: 15%;
+   
     overflow: hidden;
     img {
         height: 300px;
@@ -132,6 +146,8 @@ body {
 
 
 
+
+
 /* contact */ 
 
 .contact {
@@ -146,23 +162,39 @@ body {
 
 /* restaurant */ 
 
-.restaurants {
-    animation: 1.9s appear; 
 
-}
+main {
 
-.restaurantcontent {
-    margin-top: 2%;
-}
+
+     
+         .nav-link.active, a:hover {
+            background-color:rgba(178, 49, 48, 1) !important;
+            color: white;   
+            }
+        a {
+            background-color:rgba(178, 49, 48, 0.5) !important;
+            color: white; 
+        }
+        
+
+    }
+
+
 
 
 
 /* menu */ 
 
-#MainMenu {
-
-    margin-top: 15%;
+.list-group-item {
+    
+    display: flex;
+    justify-content: space-between;
 }
+.list-group-item-success {
+    color: white;
+}
+
+
 
 
 
@@ -172,11 +204,10 @@ body {
 
 @media (max-width: 766px) {
 
-nav ul.mr-3 {
+nav .mainbar {
     background-color: rgba(255,255,255,0.7);
     box-shadow: 13px 10px 37px -17px rgba(0,0,0,0.75);
-    width: 50%;
-    margin: 0 auto !important;
+    width: 320px;
     li {
         
         text-align: center;

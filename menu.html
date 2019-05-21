@@ -12,75 +12,93 @@
   </head>
   <body>
 
-<header>
-    <div class="row pt-3 pr-3">
-    <nav class="col-12 navbar navbar-light  bg-transparent navbar-expand-md">
+     
+    <header class="row position-relative">
 
-      <a href="index.html" class="logo w-25 pl-3">
-            <img alt="Yurm's logo"  src="img/'Yurms.png">
-      </a>
-
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            
-                <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-        
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-
-            <ul class="navbar-nav ml-auto mr-3">
-                <li class="navbar-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="navbar-item active"><a href="menu.html" class="nav-link">Menu</a></li>
-                <li class="navbar-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li class="navbar-item"><a href="restaurant.html" class="nav-link">Restaurants</a></li>
-                <li class="navbar-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-  </div>
- 
-</header>
+    <div class="transparentbg1 position-absolute">
+    </div>
+          
+    
+      <nav class="col-12 navbar navbar-light  bg-transparent navbar-expand-md pr-3">
+  
+          <a href="index.html" class="logo w-25 pl-3">
+              <img alt="Yurm's logo"  src="img/'Yurms.png">
+        </a>
+  
+          <button class="navbar-toggler " data-toggle="collapse" data-target="#navbarCollapse">
+              
+                  <span class="navbar-toggler-icon"></span>
+  
+          </button>
+  
+          
+          <div class="collapse navbar-collapse mt-2" id="navbarCollapse">
+  
+              <ul class="navbar-nav mx-auto ml-md-auto mr-md-2 mainbar">
+                  <li class="navbar-item"><a href="index.html" class="nav-link">Home</a></li>
+                  <li class="navbar-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                  <li class="navbar-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                  <li class="navbar-item"><a href="restaurant.html" class="nav-link">Restaurants</a></li>
+                  <li class="navbar-item"><a href="contact.html" class="nav-link">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
 
 <main>
 
-  <div class="transparentbg1">
- 
-    </div>
-
-
-    <div id="MainMenu">
-      <div class="list-group panel">
-        <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
-        <div class="collapse" id="demo3">
-          <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
-          <div class="collapse list-group-submenu" id="SubMenu1">
-            <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
-            <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
-            <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
-            <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
-              <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
-              <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
-            </div>
-            <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
-          </div>
-          <a href="javascript:;" class="list-group-item">Subitem 2</a>
-          <a href="javascript:;" class="list-group-item">Subitem 3</a>
-        </div>
-        <a href="#demo4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 4</a>
-        <div class="collapse" id="demo4">
-          <a href="" class="list-group-item">Subitem 1</a>
-          <a href="" class="list-group-item">Subitem 2</a>
-          <a href="" class="list-group-item">Subitem 3</a>
-        </div>
+    <div class="transparentbg">
       </div>
+
+
+    <div id="MainMenu" class="mt-5">
+
+        <div class="list-group panel mx-5">
+
+
+          <!---starter-->
+
+          <a href="#demo1" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Entrées</a>
+
+          <div class="collapse" id="demo1">
+            <a href="" class="list-group-item">Subitem 1 <span class="badge badge-primary badge-pill">14</span></a>
+            <a href="" class="list-group-item">Subitem 2 <span class="badge badge-primary badge-pill">14</span> </a>
+            <a href="" class="list-group-item">Subitem 3 <span class="badge badge-primary badge-pill">14</span> </a>
+          </div>
+
+
+          <!---mains-->
+
+          <a href="#demo2" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Mains</a>
+
+          <div class="collapse" id="demo2">
+            <a href="" class="list-group-item">Subitem 1<span class="badge badge-primary badge-pill">14</span> </a>
+            <a href="" class="list-group-item">Subitem 2 <span class="badge badge-primary badge-pill">14</span> </a>
+            <a href="" class="list-group-item">Subitem 3 <span class="badge badge-primary badge-pill">14</span></a>
+          </div>
+
+          <!----desserts-->
+
+          <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Deserts</a>
+
+          <div class="collapse" id="demo3">
+            <a href="" class="list-group-item">Subitem 1 <span class="badge badge-primary badge-pill">14</span> </a>
+            <a href="" class="list-group-item">Subitem 2<span class="badge badge-primary badge-pill">14</span> </a>
+            <a href="" class="list-group-item">Subitem 3<span class="badge badge-primary badge-pill">14</span> </a>
+          </div>
+
+
+
+
+        </div>
+
     </div>
   
     
 </main>
 
 
-<span class="badge badge-primary">Primary</span>
+
 
 <footer>
        
