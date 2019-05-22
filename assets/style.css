@@ -112,7 +112,6 @@ body .jumbotron h1, body .jumbotron p {
   font-weight: 900;
 }
 
-/* index cards */
 /* gallery */
 .gallery {
   background: rgba(255, 255, 255, 0.4);
@@ -150,16 +149,19 @@ main a:hover {
 
 /* menu */
 .list-group-item {
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.list-group-item-success {
+.list-group-item span {
+  margin-left: auto;
+}
+
+.list-group-item.dropdown, .badge-primary {
   color: white;
+  background: #B23130;
 }
 
 /* Media queries */

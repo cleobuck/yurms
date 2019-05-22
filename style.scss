@@ -116,7 +116,7 @@ body {
     }
 
 
-/* index cards */
+
 
 
 
@@ -170,20 +170,22 @@ main {
     }
 
 
-
-
-
-
 /* menu */ 
 
 .list-group-item {
-    
+    color: black;
     display: flex;
-    justify-content: space-between;
+    span {
+        margin-left: auto;
+    }
 }
-.list-group-item-success {
+
+.list-group-item.dropdown, .badge-primary  {
     color: white;
+    background: $bordeau;
 }
+
+
 
 
 
@@ -207,7 +209,6 @@ nav .mainbar {
 
 
 }
-
 
 
 
