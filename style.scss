@@ -122,27 +122,12 @@ body {
 
 /* gallery */
 
-.tab-content {
-    height: 600px;
- 
-    img {
-        height: 225px;
-        border: 5px groove #994638;
-        margin: 0 auto;
-        
-    }
-    .longimg img {
-        height: 478px;
-        text-align: center;
-    }
-    .rightshift  {
-        text-align: center;
-    }
-   
-}
 
-.nav-pills {
-    justify-content: center;
+.gallery {
+    background: rgba(255,255,255,0.4);
+    img {
+        border: 3px groove $bordeau;
+    }
 }
 
 

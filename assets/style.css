@@ -114,29 +114,12 @@ body .jumbotron h1, body .jumbotron p {
 
 /* index cards */
 /* gallery */
-.tab-content {
-  height: 600px;
+.gallery {
+  background: rgba(255, 255, 255, 0.4);
 }
 
-.tab-content img {
-  height: 225px;
-  border: 5px groove #994638;
-  margin: 0 auto;
-}
-
-.tab-content .longimg img {
-  height: 478px;
-  text-align: center;
-}
-
-.tab-content .rightshift {
-  text-align: center;
-}
-
-.nav-pills {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.gallery img {
+  border: 3px groove #B23130;
 }
 
 /* contact */
