@@ -132,6 +132,11 @@ body .jumbotron h1, body .jumbotron p {
 }
 
 /* restaurant */
+main .restaurantcontent ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
 main .nav-link.active, main a:hover {
   background-color: #b23130 !important;
   color: white;
@@ -153,6 +158,9 @@ main a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .list-group-item span {
