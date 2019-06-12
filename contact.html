@@ -12,6 +12,7 @@
   </head>
   <body>
 
+  <div class="container-fluid">
       <header class="row position-relative">
 
           <div class="transparentbg1 position-absolute">
@@ -43,6 +44,7 @@
                 </div>
             </nav>
         </header>
+    </div>
 
 <main>
 
@@ -52,45 +54,44 @@
             
       <form>
             <div class="form-group row">
-                <label class="col-sm-3 col-form-label" for="nom">Nom</label>
-                <div class="col-sm-9">
-                    <input type="text" class="form-control" id="nom">
+              
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="nom" placeholder="last name">
                 </div>
             </div>
             
             <div class="form-group row">
-                <label class="col-sm-3 col-form-label" for="prenom">Prénom</label>
-                <div class="col-sm-9">
-                    <input type="text" class="form-control" id="prenom">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="prenom" placeholder="first name">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-3 col-form-label" for="email">Email</label>
-                <div class="col-sm-9">
-                    <input type="text" class="form-control" id="prenom">
+            
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="prenom" placeholder="email">
                 </div>
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-3 col-form-label" for="sujet">Pourquoi nous contactez-vous?</label>
+               
 
-                <div class="col-sm-9">
+                <div class="col-sm-12">
                   <select class="form-control" id="sujet">
-                    <option>Une réservation</option>
-                    <option>Je suis de la presse</option>
-                    <option>Une question sur vos produits</option>
-                    <option>Un partenariat</option>
-                    <option>Une autre curiosité</option>
+                    <option value=""  disabled selected>why I contact you</option>
+                    <option>For a booking</option>
+                    <option>I'm a journalist</option>
+                    <option>I have a question about your products</option>
+                    <option>I'd like a partnership</option>
+                    <option>I'm curious</option>
                   </select>
                 </div>
              </div>
 
                 <div class="form-group row">
-                    <label class="col-sm-3 col-form-label" for="message">Votre message:</label>
 
-                    <div class="col-sm-9">
-                    <textarea class="form-control" id="message" rows="5"></textarea>
+                    <div class="col-sm-12">
+                    <textarea class="form-control" id="message" rows="5" placeholder="your message"></textarea>
                     </div>
 
                 </div>
