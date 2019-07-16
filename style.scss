@@ -15,6 +15,14 @@ $bordeau:  #B23130;
 
 
 /* main styling and for index.html */ 
+h1, h2, h3, h4, h5 {
+    font-family: 'Barriecito', cursive;
+}
+body, html  {
+    width: 100%;
+    height: 100%;
+   
+}
 .transparentbg1 {
     position: absolute;
     z-index: -1;
@@ -42,16 +50,16 @@ $bordeau:  #B23130;
 
 
 body {
-
+    padding-bottom: 150px;
+   
     background: #f2f2f2;
-    height: 100%;
     color: $text_color;
     
 
     nav {
         top: 0;
         background: transparent;
-        
+        font-family: 'Barriecito', cursive;
         .logo {
             width: 30%;
             img {
@@ -65,7 +73,6 @@ body {
             font-size: 1.2em;
             margin: 0 5px;
             background: rgba(255, 255, 255, 0.5);
-            
             border-radius: 10px;
             
             }
@@ -113,6 +120,7 @@ body {
        h1, p {
            font-weight: 900;
            color: #22221f;
+           font-family: 'Barriecito', cursive;
        }
     }
 }
@@ -146,7 +154,7 @@ body {
     }
 }
 
-.tab-pane, .card, #MainMenu, .form-group, #message, .navbar .nav-link {
+ .card, #MainMenu, .form-group .col-sm-12, #message, .navbar .nav-link {
     -webkit-box-shadow: 10px 7px 16px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 7px 16px -6px rgba(0,0,0,0.75);
     box-shadow: 10px 7px 16px -6px rgba(0,0,0,0.75);
@@ -232,6 +240,9 @@ main {
     }
 }
 
+#MainMenu {
+    margin-bottom: 150px;
+}
 
 
 /* Media queries */ 
@@ -239,16 +250,16 @@ main {
 
 @media (max-width: 766px) {
     body { 
+        padding-bottom: 100px;
         nav {
             .logo {
                 width: 75%;
             }
             .mainbar {
-                background-color: rgba(255,255,255,0.7);
-                box-shadow: 13px 10px 37px -17px rgba(0,0,0,0.75);
                 width: 320px;
                 li {
                     text-align: center;
+                    margin-bottom: 2px;
                 }
             }
         }
@@ -256,6 +267,20 @@ main {
 }
 
 
+//footer 
+
+footer {
+    height: 100px;
+    background: rgba(255,255,255, 0.3);
+    margin-top: 75px;
+    bottom: 0px;
+    font-family: 'Barriecito', cursive;
+    color: $text_color;
+    font-size: 200%;
+    p {
+        margin-bottom: 0;
+        }
+    }
 
 
 
