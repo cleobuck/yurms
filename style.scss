@@ -53,6 +53,7 @@ body {
         background: transparent;
         
         .logo {
+            width: 30%;
             img {
                 width: 100%;
               }
@@ -61,13 +62,17 @@ body {
         .nav-link { 
             font-weight: 900;
             color: $text_color;
-            
+            font-size: 1.2em;
             margin: 0 5px;
+            background: rgba(255, 255, 255, 0.5);
+            
             border-radius: 10px;
             
             }
         }
+
     }
+
 
     .btn-primary {
         background-color: #B23130;
@@ -88,7 +93,6 @@ body {
             content:'';
             background: url('https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Ftimedotcom.files.wordpress.com%2F2015%2F04%2Fdavid-george-gordon-deep-fried-tarantula-spider-image-p-118.jpeg%3Fquality%3D85&w=800&c=sc&poi=face&q=85')  center center/cover no-repeat;
             position: fixed;
-
             top:0px;
             left: 0px;
             width:100%;
@@ -106,14 +110,12 @@ body {
         justify-content: center;
         flex-direction: column;
         height: 60vh;
-       
-    
-      
        h1, p {
            font-weight: 900;
+           color: #22221f;
        }
     }
-    }
+}
 
 
 
@@ -126,11 +128,48 @@ body {
 .gallery {
     background: rgba(255,255,255,0.4);
     img {
-        border: 3px groove $bordeau;
+        -webkit-box-shadow: 10px 7px 16px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 7px 16px -6px rgba(0,0,0,0.75);
+        box-shadow: 10px 7px 16px -6px rgba(0,0,0,0.75);
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
+.modal-content {
+    background: rgba(255,255,255,0.8) !important;
+    img {
+        -webkit-box-shadow: 10px 7px 16px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 7px 16px -6px rgba(0,0,0,0.75);
+        box-shadow: 10px 7px 16px -6px rgba(0,0,0,0.75);
+    }
+}
 
+.tab-pane, .card, #MainMenu, .form-group, #message, .navbar .nav-link {
+    -webkit-box-shadow: 10px 7px 16px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 7px 16px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 7px 16px -6px rgba(0,0,0,0.75);
+}
+
+
+#pills-tab  {
+
+    .nav-link {
+        color: $text_color;
+        &:hover {
+            color: white;
+        }
+    }  
+    .active {
+        color: white;
+    } 
+}
+
+
+.modal button.btn {
+    background: $bordeau;
+}
 
 
 
@@ -138,7 +177,7 @@ body {
 
 .contact {
 
-    margin-top: 15%;
+    margin-top: 4%;
     .btn-primary {
         background-color: #B23130;
         border: none;
@@ -156,9 +195,8 @@ main {
                 list-style-type: circle;
                 padding-left: 20px;
             }
-
-
         }
+
      
         .nav-link.active, a:hover {
             background-color:rgba(178, 49, 48, 1) !important;
@@ -168,12 +206,7 @@ main {
             background-color:rgba(178, 49, 48, 0.5) !important;
             color: white; 
         }
-        a:hover {
-        background-color:rgba(178, 49, 48, 0.5) !important;
-            color: white; 
         
-        }
-
     }
 
 
@@ -184,23 +217,20 @@ main {
     display: flex;
     align-items: center;
     span {
-        margin-left: auto;
-       
-        
+        margin-left: auto;  
+    }
+    &:hover {
+        background-color: white !important;
     }
 }
 
 .list-group-item.dropdown, .badge-primary  {
     color: white;
     background: $bordeau;
+    &:hover {
+        background: $bordeau !important;
+    }
 }
-
-
-
-
-
-
-
 
 
 
@@ -208,19 +238,24 @@ main {
 
 
 @media (max-width: 766px) {
-
-nav .mainbar {
-    background-color: rgba(255,255,255,0.7);
-    box-shadow: 13px 10px 37px -17px rgba(0,0,0,0.75);
-    width: 320px;
-    li {
-        
-        text-align: center;
+    body { 
+        nav {
+            .logo {
+                width: 75%;
+            }
+            .mainbar {
+                background-color: rgba(255,255,255,0.7);
+                box-shadow: 13px 10px 37px -17px rgba(0,0,0,0.75);
+                width: 320px;
+                li {
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
 
-}
 
 
 

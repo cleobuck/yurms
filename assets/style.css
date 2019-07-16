@@ -55,6 +55,10 @@ body nav {
   background: transparent;
 }
 
+body nav .logo {
+  width: 30%;
+}
+
 body nav .logo img {
   width: 100%;
 }
@@ -62,7 +66,9 @@ body nav .logo img {
 body nav .navbar-item .nav-link {
   font-weight: 900;
   color: #0E1705;
+  font-size: 1.2em;
   margin: 0 5px;
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
 }
 
@@ -110,6 +116,7 @@ body .jumbotron {
 
 body .jumbotron h1, body .jumbotron p {
   font-weight: 900;
+  color: #22221f;
 }
 
 /* gallery */
@@ -118,12 +125,47 @@ body .jumbotron h1, body .jumbotron p {
 }
 
 .gallery img {
-  border: 3px groove #B23130;
+  -webkit-box-shadow: 10px 7px 16px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 7px 16px -6px rgba(0, 0, 0, 0.75);
+}
+
+.gallery img:hover {
+  cursor: pointer;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+
+.modal-content img {
+  -webkit-box-shadow: 10px 7px 16px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 7px 16px -6px rgba(0, 0, 0, 0.75);
+}
+
+.tab-pane, .card, #MainMenu, .form-group, #message, .navbar .nav-link {
+  -webkit-box-shadow: 10px 7px 16px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 7px 16px -6px rgba(0, 0, 0, 0.75);
+}
+
+#pills-tab .nav-link {
+  color: #0E1705;
+}
+
+#pills-tab .nav-link:hover {
+  color: white;
+}
+
+#pills-tab .active {
+  color: white;
+}
+
+.modal button.btn {
+  background: #B23130;
 }
 
 /* contact */
 .contact {
-  margin-top: 15%;
+  margin-top: 4%;
 }
 
 .contact .btn-primary {
@@ -147,11 +189,6 @@ main .restaurants a {
   color: white;
 }
 
-main a:hover {
-  background-color: rgba(178, 49, 48, 0.5) !important;
-  color: white;
-}
-
 /* menu */
 .list-group-item {
   color: black;
@@ -167,20 +204,31 @@ main a:hover {
   margin-left: auto;
 }
 
+.list-group-item:hover {
+  background-color: white !important;
+}
+
 .list-group-item.dropdown, .badge-primary {
   color: white;
   background: #B23130;
 }
 
+.list-group-item.dropdown:hover, .badge-primary:hover {
+  background: #B23130 !important;
+}
+
 /* Media queries */
 @media (max-width: 766px) {
-  nav .mainbar {
+  body nav .logo {
+    width: 75%;
+  }
+  body nav .mainbar {
     background-color: rgba(255, 255, 255, 0.7);
     -webkit-box-shadow: 13px 10px 37px -17px rgba(0, 0, 0, 0.75);
             box-shadow: 13px 10px 37px -17px rgba(0, 0, 0, 0.75);
     width: 320px;
   }
-  nav .mainbar li {
+  body nav .mainbar li {
     text-align: center;
   }
 }
