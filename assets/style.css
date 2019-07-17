@@ -55,6 +55,7 @@ body, html {
 
 body {
   padding-bottom: 150px;
+  position: relative;
   background: #f2f2f2;
   color: #0E1705;
 }
@@ -234,9 +235,6 @@ main .restaurants a {
 
 /* Media queries */
 @media (max-width: 766px) {
-  body {
-    padding-bottom: 100px;
-  }
   body nav .logo {
     width: 75%;
   }
@@ -253,7 +251,7 @@ footer {
   height: 100px;
   background: rgba(255, 255, 255, 0.3);
   margin-top: 75px;
-  bottom: 0px;
+  bottom: 10px;
   font-family: 'Barriecito', cursive;
   color: #0E1705;
   font-size: 200%;
