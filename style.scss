@@ -50,10 +50,10 @@ body, html  {
 
 
 body {
-    padding-bottom: 150px;
-    position: relative;
+
     background: #f2f2f2;
     color: $text_color;
+
     
 
     nav {
@@ -269,11 +269,21 @@ main {
 
 //footer 
 
+.biggerPage {
+position: relative;
+min-height: 100vh;
+
+}
+.page {
+   padding-bottom: 100px;
+
+}
+
+
 footer {
     height: 100px;
     background: rgba(255,255,255, 0.3);
-    margin-top: 75px;
-    bottom: 10px;
+    bottom: 0;
     font-family: 'Barriecito', cursive;
     color: $text_color;
     font-size: 200%;
@@ -281,6 +291,9 @@ footer {
         margin-bottom: 0;
         }
     }
+
+
+
 
 
 
